@@ -3,44 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>マイECサイト</title>
+    <title>食材から作る献立メモ</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">MyShop</div>
-      <input type="text" class="search-box" placeholder="商品を検索" />
-      <div class="nav-links">
-        <a href="#">ログイン</a>
-        <a href="#">カート</a>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">スーパーで使う献立検索</p>
+        <h1>食材から作れるレシピを探す</h1>
+      </div>
+      <div class="header-summary">
+        <span id="recipeCount">0</span>
+        <small>登録レシピ</small>
       </div>
     </header>
 
-    <main class="product-list">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="商品画像" />
-        <h2 class="product-title">商品名A</h2>
-        <p class="product-price">¥1,980</p>
-        <button class="buy-button">カートに追加</button>
-      </div>
+    <main class="app-shell">
+      <section class="panel ingredient-panel" aria-labelledby="ingredientTitle">
+        <div class="section-heading">
+          <div>
+            <p class="step-label">1 食材選択</p>
+            <h2 id="ingredientTitle">安かった食材</h2>
+          </div>
+          <button class="ghost-button" id="clearFilters" type="button">クリア</button>
+        </div>
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="商品画像" />
-        <h2 class="product-title">商品名B</h2>
-        <p class="product-price">¥3,280</p>
-        <button class="buy-button">カートに入れる</button>
-      </div>
+        <label class="field-label" for="ingredientSearch">食材検索</label>
+        <input
+          id="ingredientSearch"
+          class="text-input"
+          type="search"
+          placeholder="例: 鶏むね肉、鮭、キャベツ"
+          autocomplete="off"
+        />
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="商品画像" />
-        <h2 class="product-title">商品名C</h2>
-        <p class="product-price">¥4,980</p>
-        <button class="buy-button">カートに追加</button>
-      </div>
+        <div class="category-tabs" id="categoryTabs" aria-label="食材カテゴリ"></div>
+        <div class="ingredient-grid" id="ingredientGrid"></div>
+
+        <div class="home-box">
+          <label class="field-label" for="pantryInput">家にある食材・調味料</label>
+          <textarea id="pantryInput" rows="4"></textarea>
+          <p>読点・カンマ・改行で区切れます。ここにあるものと調味料は買い物リストから外します。</p>
+        </div>
+      </section>
+
+      <section class="panel recipes-panel" aria-labelledby="recipesTitle">
+        <div class="section-heading">
+          <div>
+            <p class="step-label">2 レシピ候補</p>
+            <h2 id="recipesTitle">作れる候補</h2>
+          </div>
+          <select id="tagFilter" class="select-input" aria-label="タグで絞り込み">
+            <option value="">すべてのタグ</option>
+          </select>
+        </div>
+        <div class="selected-ingredient" id="selectedIngredient">食材を選択してください</div>
+        <div class="recipe-list" id="recipeList"></div>
+      </section>
+
+      <section class="panel shopping-panel" aria-labelledby="shoppingTitle">
+        <div class="section-heading">
+          <div>
+            <p class="step-label">3 買い物リスト</p>
+            <h2 id="shoppingTitle">買うもの</h2>
+          </div>
+          <button class="ghost-button" id="clearShopping" type="button">リセット</button>
+        </div>
+        <div class="shopping-empty" id="shoppingEmpty">レシピを選ぶと自動生成されます。</div>
+        <div class="shopping-list" id="shoppingList"></div>
+      </section>
+
+      <section class="panel editor-panel" aria-labelledby="editorTitle">
+        <div class="section-heading">
+          <div>
+            <p class="step-label">4 レシピ登録</p>
+            <h2 id="editorTitle">手入力で追加</h2>
+          </div>
+        </div>
+
+        <form id="recipeForm" class="recipe-form">
+          <div class="form-row">
+            <label>
+              レシピ名
+              <input class="text-input" name="name" required placeholder="豚こま生姜焼き" />
+            </label>
+            <label>
+              メイン食材
+              <input class="text-input" name="main" required placeholder="豚こま肉" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              サブ食材
+              <input class="text-input" name="subs" placeholder="玉ねぎ、キャベツ" />
+            </label>
+            <label>
+              調味料
+              <input class="text-input" name="seasonings" placeholder="醤油、みりん、酒、生姜" />
+            </label>
+          </div>
+          <div class="form-row compact">
+            <label>
+              人数
+              <input class="text-input" name="servings" placeholder="2人前" />
+            </label>
+            <label>
+              調理時間
+              <input class="text-input" name="time" type="number" min="1" placeholder="15" />
+            </label>
+            <label>
+              ページ
+              <input class="text-input" name="page" type="number" min="1" placeholder="42" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              参考元
+              <input class="text-input" name="book" placeholder="いつものレシピ本" />
+            </label>
+            <label>
+              タグ
+              <input class="text-input" name="tags" placeholder="時短、安い、和食" />
+            </label>
+          </div>
+          <label>
+            メモ
+            <textarea name="memo" rows="3" placeholder="冷凍可、弁当向き"></textarea>
+          </label>
+          <button class="primary-button" type="submit">レシピを追加</button>
+        </form>
+      </section>
     </main>
 
-    <footer class="footer">
-      <p>&copy; 2025 MyShop. All rights reserved.</p>
-    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
