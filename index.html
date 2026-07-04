@@ -69,6 +69,17 @@
           </div>
           <button class="ghost-button" id="clearShopping" type="button">リセット</button>
         </div>
+        <form id="shoppingForm" class="shopping-form">
+          <label>
+            買い物を追加
+            <input class="text-input" name="item" placeholder="例: トイレットペーパー" autocomplete="off" />
+          </label>
+          <label>
+            量
+            <input class="text-input" name="amount" placeholder="例: 1個、2袋" autocomplete="off" />
+          </label>
+          <button class="primary-button" type="submit">追加</button>
+        </form>
         <div class="shopping-empty" id="shoppingEmpty">レシピを選ぶと自動生成されます。</div>
         <div class="shopping-list" id="shoppingList"></div>
       </section>
