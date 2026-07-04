@@ -1,3 +1,5 @@
+const SHOPPING_DATA_VERSION = "empty-shopping-list-with-horizontal-manual-form-v3";
+
 const defaultIngredients = [
   { name: "豚こまぎれ肉", category: "肉", aliases: ["豚こま", "豚こま切れ肉"] },
   { name: "豚バラ薄切り肉", category: "肉", aliases: ["豚バラ"] },
@@ -55,6 +57,14 @@ let selectedRecipeId = "";
 let shoppingItems = loadJson("shoppingItems", []);
 let selectedShoppingRecipes = loadJson("selectedShoppingRecipes", []);
 
+if (localStorage.getItem("shoppingDataVersion") !== SHOPPING_DATA_VERSION) {
+  shoppingItems = [];
+  selectedShoppingRecipes = [];
+  saveJson("shoppingItems", shoppingItems);
+  saveJson("selectedShoppingRecipes", selectedShoppingRecipes);
+  localStorage.setItem("shoppingDataVersion", SHOPPING_DATA_VERSION);
+}
+
 const recipeCount = document.querySelector("#recipeCount");
 const ingredientSearch = document.querySelector("#ingredientSearch");
 const categoryTabs = document.querySelector("#categoryTabs");
@@ -65,6 +75,7 @@ const selectedIngredientLabel = document.querySelector("#selectedIngredient");
 const recipeList = document.querySelector("#recipeList");
 const shoppingEmpty = document.querySelector("#shoppingEmpty");
 const shoppingList = document.querySelector("#shoppingList");
+const shoppingForm = document.querySelector("#shoppingForm");
 const recipeForm = document.querySelector("#recipeForm");
 
 pantryInput.value = loadJson("pantry", defaultPantry).join("、");
@@ -84,6 +95,7 @@ document.querySelector("#clearShopping").addEventListener("click", () => {
   selectedShoppingRecipes = [];
   saveJson("shoppingItems", shoppingItems);
   saveJson("selectedShoppingRecipes", selectedShoppingRecipes);
+  localStorage.setItem("shoppingDataVersion", SHOPPING_DATA_VERSION);
   renderRecipes();
   renderShoppingList();
 });
@@ -100,6 +112,18 @@ pantryInput.addEventListener("input", () => {
 });
 
 tagFilter.addEventListener("change", renderRecipes);
+
+shoppingForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const form = new FormData(shoppingForm);
+  const itemName = String(form.get("item")).trim();
+  const amount = String(form.get("amount")).trim() || "必要量";
+  if (!itemName) return;
+
+  addManualShoppingItem(itemName, amount);
+  shoppingForm.reset();
+  renderShoppingList();
+});
 
 recipeForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -146,6 +170,7 @@ async function init() {
       selectedShoppingRecipes = [];
       saveJson("shoppingItems", shoppingItems);
       saveJson("selectedShoppingRecipes", selectedShoppingRecipes);
+      localStorage.setItem("shoppingDataVersion", SHOPPING_DATA_VERSION);
     }
     recipes = loadJson("recipes", data.recipes);
   } catch (error) {
@@ -300,6 +325,26 @@ function addRecipeToShoppingList(recipe) {
   });
   saveJson("shoppingItems", shoppingItems);
   saveJson("selectedShoppingRecipes", selectedShoppingRecipes);
+}
+
+function addManualShoppingItem(name, amount) {
+  const category = guessCategory(name);
+  const normalizedCategory = category === seasoningCategory ? "その他" : category;
+  const key = `${normalize(normalizedCategory)}:${normalize(name)}`;
+  const existing = shoppingItems.find((shoppingItem) => shoppingItem.key === key);
+  if (existing) {
+    existing.amounts.push(amount || "必要量");
+  } else {
+    shoppingItems.push({
+      key,
+      name,
+      category: normalizedCategory || "その他",
+      amounts: [amount || "必要量"],
+      recipes: [],
+      checked: false,
+    });
+  }
+  saveJson("shoppingItems", shoppingItems);
 }
 
 function renderShoppingList() {

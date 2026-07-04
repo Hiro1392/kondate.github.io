@@ -236,6 +236,22 @@ textarea:focus {
   gap: 10px;
 }
 
+.shopping-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(88px, 120px);
+  align-items: end;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff6e8;
+}
+
+.shopping-form .primary-button {
+  grid-column: 1 / -1;
+}
+
 .recipe-card {
   display: grid;
   gap: 10px;
