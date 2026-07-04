@@ -110,7 +110,7 @@ h2 {
   position: fixed;
   right: 10px;
   top: 50%;
-  z-index: 20;
+  z-index: 9999;
   display: grid;
   gap: 8px;
   transform: translateY(-38%);
@@ -128,6 +128,7 @@ h2 {
   color: var(--accent-dark);
   font-size: 12px;
   font-weight: 800;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   text-decoration: none;
   touch-action: manipulation;
@@ -492,7 +493,8 @@ textarea:focus {
   .quick-nav {
     right: 0;
     top: auto;
-    bottom: max(72px, env(safe-area-inset-bottom));
+    bottom: 72px;
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
     gap: 7px;
     transform: none;
   }
