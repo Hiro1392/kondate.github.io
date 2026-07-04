@@ -107,11 +107,11 @@ h2 {
 }
 
 .quick-nav {
-  position: fixed;
-  right: 10px;
+  position: fixed !important;
+  right: 10px !important;
   top: 50%;
-  z-index: 9999;
-  display: grid;
+  z-index: 9999 !important;
+  display: grid !important;
   gap: 8px;
   transform: translateY(-38%);
 }
@@ -491,10 +491,10 @@ textarea:focus {
   }
 
   .quick-nav {
-    right: 0;
+    right: 0 !important;
     top: auto;
-    bottom: 72px;
-    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+    bottom: 72px !important;
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
     gap: 7px;
     transform: none;
   }
