@@ -53,6 +53,7 @@ let selectedCategory = "";
 let selectedIngredient = "";
 let selectedRecipeId = "";
 let shoppingItems = loadJson("shoppingItems", []);
+let selectedShoppingRecipes = loadJson("selectedShoppingRecipes", []);
 
 const recipeCount = document.querySelector("#recipeCount");
 const ingredientSearch = document.querySelector("#ingredientSearch");
@@ -80,7 +81,9 @@ document.querySelector("#clearFilters").addEventListener("click", () => {
 document.querySelector("#clearShopping").addEventListener("click", () => {
   selectedRecipeId = "";
   shoppingItems = [];
+  selectedShoppingRecipes = [];
   saveJson("shoppingItems", shoppingItems);
+  saveJson("selectedShoppingRecipes", selectedShoppingRecipes);
   renderRecipes();
   renderShoppingList();
 });
@@ -140,7 +143,9 @@ async function init() {
       saveJson("recipes", data.recipes);
       localStorage.setItem("recipeDataVersion", data.version);
       shoppingItems = [];
+      selectedShoppingRecipes = [];
       saveJson("shoppingItems", shoppingItems);
+      saveJson("selectedShoppingRecipes", selectedShoppingRecipes);
     }
     recipes = loadJson("recipes", data.recipes);
   } catch (error) {
@@ -273,6 +278,9 @@ function renderRecipes() {
 
 function addRecipeToShoppingList(recipe) {
   const items = getMissingIngredients(recipe, getPantryItems());
+  if (!selectedShoppingRecipes.includes(recipe.name)) {
+    selectedShoppingRecipes.push(recipe.name);
+  }
   items.forEach((item) => {
     const key = `${normalize(item.category)}:${normalize(item.name)}`;
     const existing = shoppingItems.find((shoppingItem) => shoppingItem.key === key);
@@ -291,6 +299,7 @@ function addRecipeToShoppingList(recipe) {
     });
   });
   saveJson("shoppingItems", shoppingItems);
+  saveJson("selectedShoppingRecipes", selectedShoppingRecipes);
 }
 
 function renderShoppingList() {
@@ -326,6 +335,22 @@ function renderShoppingList() {
     });
     shoppingList.appendChild(group);
   });
+
+  const recipeNames = getSelectedShoppingRecipeNames();
+  if (recipeNames.length) {
+    const selectedRecipes = document.createElement("section");
+    selectedRecipes.className = "selected-recipes";
+    selectedRecipes.innerHTML = `
+      <h3>選んだレシピ</h3>
+      <ul>${recipeNames.map((name) => `<li>${escapeHtml(name)}</li>`).join("")}</ul>
+    `;
+    shoppingList.appendChild(selectedRecipes);
+  }
+}
+
+function getSelectedShoppingRecipeNames() {
+  const fromItems = shoppingItems.flatMap((item) => item.recipes || []);
+  return [...new Set([...selectedShoppingRecipes, ...fromItems])];
 }
 
 function getAllIngredients() {
