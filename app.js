@@ -169,7 +169,10 @@ function renderCategories() {
     button.textContent = category;
     button.addEventListener("click", () => {
       selectedCategory = selectedCategory === category ? "" : category;
+      selectedIngredient = "";
+      ingredientSearch.value = "";
       renderIngredients();
+      renderRecipes();
     });
     categoryTabs.appendChild(button);
   });
