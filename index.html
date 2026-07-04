@@ -18,8 +18,15 @@
       </div>
     </header>
 
+    <nav class="quick-nav" aria-label="ページ内ショートカット">
+      <a href="#ingredientsSection" aria-label="食材選択へ移動">食材</a>
+      <a href="#recipesSection" aria-label="レシピ候補へ移動">レシピ</a>
+      <a href="#shoppingSection" aria-label="買い物リストへ移動">買物</a>
+      <a href="#editorSection" aria-label="レシピ登録へ移動">登録</a>
+    </nav>
+
     <main class="app-shell">
-      <section class="panel ingredient-panel" aria-labelledby="ingredientTitle">
+      <section class="panel ingredient-panel" id="ingredientsSection" aria-labelledby="ingredientTitle">
         <div class="section-heading">
           <div>
             <p class="step-label">1 食材選択</p>
@@ -47,7 +54,7 @@
         </div>
       </section>
 
-      <section class="panel recipes-panel" aria-labelledby="recipesTitle">
+      <section class="panel recipes-panel" id="recipesSection" aria-labelledby="recipesTitle">
         <div class="section-heading">
           <div>
             <p class="step-label">2 レシピ候補</p>
@@ -61,7 +68,7 @@
         <div class="recipe-list" id="recipeList"></div>
       </section>
 
-      <section class="panel shopping-panel" aria-labelledby="shoppingTitle">
+      <section class="panel shopping-panel" id="shoppingSection" aria-labelledby="shoppingTitle">
         <div class="section-heading">
           <div>
             <p class="step-label">3 買い物リスト</p>
@@ -84,7 +91,7 @@
         <div class="shopping-list" id="shoppingList"></div>
       </section>
 
-      <section class="panel editor-panel" aria-labelledby="editorTitle">
+      <section class="panel editor-panel" id="editorSection" aria-labelledby="editorTitle">
         <div class="section-heading">
           <div>
             <p class="step-label">4 レシピ登録</p>

@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -102,6 +106,39 @@ h2 {
   color: var(--muted);
 }
 
+.quick-nav {
+  position: fixed !important;
+  right: 10px !important;
+  top: 50%;
+  z-index: 9999 !important;
+  display: grid !important;
+  gap: 8px;
+  transform: translateY(-38%);
+}
+
+.quick-nav a {
+  display: grid;
+  min-width: 58px;
+  min-height: 46px;
+  place-items: center;
+  border: 1px solid rgba(169, 68, 43, 0.16);
+  border-radius: 8px 0 0 8px;
+  background: rgba(255, 250, 244, 0.58);
+  box-shadow: 0 8px 22px rgba(113, 79, 46, 0.16);
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 800;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+.quick-nav a:focus-visible {
+  outline: 3px solid rgba(217, 107, 74, 0.28);
+  outline-offset: 2px;
+}
+
 .app-shell {
   display: grid;
   grid-template-columns: minmax(270px, 0.9fr) minmax(320px, 1.25fr);
@@ -112,6 +149,7 @@ h2 {
 
 .panel {
   min-width: 0;
+  scroll-margin-top: 16px;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -449,5 +487,23 @@ textarea:focus {
 
   .panel {
     padding: 14px;
+    scroll-margin-top: 12px;
+  }
+
+  .quick-nav {
+    right: 0 !important;
+    top: auto;
+    bottom: 72px !important;
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
+    gap: 7px;
+    transform: none;
+  }
+
+  .quick-nav a {
+    min-width: 54px;
+    min-height: 48px;
+    border-right: 0;
+    background: rgba(255, 250, 244, 0.5);
+    font-size: 11px;
   }
 }
