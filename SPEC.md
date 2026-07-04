@@ -10,6 +10,7 @@
 - レシピ候補: 選択食材とタグで絞り込み、足りない材料数が少ない順に表示
 - 買い物リスト: レシピから不足食材を自動追加し、手入力項目も追加可能
 - レシピ登録: フォームからローカルストレージ上のレシピ一覧へ追加
+- 固定ショートカット: スマホで右手親指から押しやすい右側固定位置に、各セクションへのページ内リンクを常時表示
 
 ## データ保存
 
@@ -52,6 +53,7 @@
 - レシピ検索条件を変える: `app.js` の `recipeMatchesIngredient` と `renderRecipes`
 - 買い物リストの統合ルールを変える: `app.js` の `addRecipeToShoppingList` と `addManualShoppingItem`
 - 画面項目を追加する: `index.html`、描画処理は `app.js`、見た目は `style.css`
+- 右側固定ショートカットを変える: `index.html` の `quick-nav` と、`style.css` の `.quick-nav`
 
 ## 注意点
 
