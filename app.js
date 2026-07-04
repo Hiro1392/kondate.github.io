@@ -1,142 +1,58 @@
-const defaultRecipes = [
-  {
-    id: "recipe_001",
-    name: "鶏むね肉の照り焼き",
-    mainIngredients: ["鶏むね肉"],
-    ingredients: [
-      { name: "鶏むね肉", amount: "300g", category: "肉" },
-      { name: "片栗粉", amount: "大さじ1", category: "調味料" },
-      { name: "醤油", amount: "大さじ2", category: "調味料" },
-      { name: "みりん", amount: "大さじ2", category: "調味料" },
-    ],
-    tags: ["肉", "時短", "安い", "和食"],
-    time: 15,
-    servings: "2人前",
-    book: "いつものレシピ本",
-    page: 42,
-    memo: "弁当向き",
-  },
-  {
-    id: "recipe_002",
-    name: "鶏むね南蛮",
-    mainIngredients: ["鶏むね肉"],
-    ingredients: [
-      { name: "鶏むね肉", amount: "300g", category: "肉" },
-      { name: "卵", amount: "2個", category: "卵・豆腐" },
-      { name: "玉ねぎ", amount: "1/4個", category: "野菜" },
-      { name: "レタス", amount: "適量", category: "野菜" },
-      { name: "マヨネーズ", amount: "大さじ3", category: "調味料" },
-      { name: "酢", amount: "大さじ2", category: "調味料" },
-      { name: "砂糖", amount: "大さじ1", category: "調味料" },
-    ],
-    tags: ["肉", "作り置き", "和食"],
-    time: 25,
-    servings: "2人前",
-    book: "平日おかず帳",
-    page: 18,
-    memo: "少し手間",
-  },
-  {
-    id: "recipe_003",
-    name: "鮭のちゃんちゃん焼き",
-    mainIngredients: ["鮭"],
-    ingredients: [
-      { name: "鮭", amount: "2切れ", category: "魚" },
-      { name: "キャベツ", amount: "1/6玉", category: "野菜" },
-      { name: "玉ねぎ", amount: "1/2個", category: "野菜" },
-      { name: "しめじ", amount: "1/2株", category: "野菜" },
-      { name: "味噌", amount: "大さじ2", category: "調味料" },
-      { name: "バター", amount: "10g", category: "その他" },
-    ],
-    tags: ["魚", "野菜多め", "和食"],
-    time: 20,
-    servings: "2人前",
-    book: "魚のおかず",
-    page: 55,
-    memo: "フライパンで可",
-  },
-  {
-    id: "recipe_004",
-    name: "豚こま生姜焼き",
-    mainIngredients: ["豚こま肉"],
-    ingredients: [
-      { name: "豚こま肉", amount: "250g", category: "肉" },
-      { name: "玉ねぎ", amount: "1/2個", category: "野菜" },
-      { name: "キャベツ", amount: "適量", category: "野菜" },
-      { name: "醤油", amount: "大さじ2", category: "調味料" },
-      { name: "みりん", amount: "大さじ2", category: "調味料" },
-      { name: "酒", amount: "大さじ1", category: "調味料" },
-      { name: "生姜", amount: "1かけ", category: "調味料" },
-    ],
-    tags: ["肉", "時短", "安い", "和食"],
-    time: 15,
-    servings: "2人前",
-    book: "定番おかず",
-    page: 11,
-    memo: "冷凍可",
-  },
-  {
-    id: "recipe_005",
-    name: "なすとひき肉の味噌炒め",
-    mainIngredients: ["なす", "ひき肉"],
-    ingredients: [
-      { name: "なす", amount: "3本", category: "野菜" },
-      { name: "ひき肉", amount: "200g", category: "肉" },
-      { name: "長ねぎ", amount: "1/2本", category: "野菜" },
-      { name: "味噌", amount: "大さじ2", category: "調味料" },
-      { name: "酒", amount: "大さじ1", category: "調味料" },
-      { name: "砂糖", amount: "小さじ2", category: "調味料" },
-    ],
-    tags: ["肉", "中華", "作り置き"],
-    time: 20,
-    servings: "2人前",
-    book: "野菜おかず",
-    page: 27,
-    memo: "ご飯に合う",
-  },
-  {
-    id: "recipe_006",
-    name: "ぶりの照り焼き",
-    mainIngredients: ["ぶり"],
-    ingredients: [
-      { name: "ぶり", amount: "2切れ", category: "魚" },
-      { name: "醤油", amount: "大さじ2", category: "調味料" },
-      { name: "みりん", amount: "大さじ2", category: "調味料" },
-      { name: "酒", amount: "大さじ2", category: "調味料" },
-      { name: "砂糖", amount: "小さじ2", category: "調味料" },
-    ],
-    tags: ["魚", "時短", "和食"],
-    time: 15,
-    servings: "2人前",
-    book: "魚のおかず",
-    page: 22,
-    memo: "調味料だけで作れる",
-  },
-];
-
 const defaultIngredients = [
-  { name: "豚こま肉", category: "肉", aliases: ["豚こま"] },
-  { name: "鶏むね肉", category: "肉", aliases: ["とりむね", "鶏胸肉"] },
-  { name: "ひき肉", category: "肉", aliases: ["ミンチ"] },
+  { name: "豚こまぎれ肉", category: "肉", aliases: ["豚こま", "豚こま切れ肉"] },
+  { name: "豚バラ薄切り肉", category: "肉", aliases: ["豚バラ"] },
+  { name: "鶏もも肉", category: "肉", aliases: ["鶏もも"] },
+  { name: "鶏ひき肉", category: "肉", aliases: ["鶏ミンチ"] },
   { name: "鮭", category: "魚", aliases: ["さけ", "サーモン"] },
-  { name: "ぶり", category: "魚", aliases: ["ブリ"] },
-  { name: "キャベツ", category: "野菜", aliases: [] },
-  { name: "なす", category: "野菜", aliases: ["茄子"] },
+  { name: "めかじき", category: "魚", aliases: ["メカジキ"] },
+  { name: "さわら", category: "魚", aliases: ["鰆"] },
+  { name: "かぼちゃ", category: "野菜", aliases: ["南瓜"] },
+  { name: "小松菜", category: "野菜", aliases: [] },
+  { name: "白菜キムチ", category: "野菜", aliases: ["キムチ"] },
+  { name: "えのきだけ", category: "野菜", aliases: ["えのき"] },
+  { name: "しいたけ", category: "野菜", aliases: ["椎茸"] },
+  { name: "しめじ", category: "野菜", aliases: [] },
   { name: "玉ねぎ", category: "野菜", aliases: ["玉葱"] },
-  { name: "長ねぎ", category: "野菜", aliases: ["ねぎ"] },
-  { name: "卵", category: "卵・豆腐", aliases: ["たまご"] },
-  { name: "豆腐", category: "卵・豆腐", aliases: [] },
+  { name: "ピーマン", category: "野菜", aliases: [] },
+  { name: "にんじん", category: "野菜", aliases: ["人参"] },
+  { name: "セロリ", category: "野菜", aliases: [] },
+  { name: "レモンの薄切り", category: "野菜", aliases: ["レモン"] },
+  { name: "万能ねぎ", category: "野菜", aliases: ["ねぎ"] },
+  { name: "青じそ", category: "野菜", aliases: ["大葉"] },
+  { name: "ベビーリーフ", category: "野菜", aliases: [] },
+  { name: "しょうが", category: "野菜", aliases: ["生姜", "ショウガ"] },
+  { name: "にんにく", category: "野菜", aliases: ["ニンニク", "大蒜"] },
+  { name: "バター", category: "その他", aliases: [] },
 ];
 
-const defaultPantry = ["醤油", "みりん", "酒", "砂糖", "塩", "片栗粉", "酢", "味噌"];
+const defaultPantry = [
+  "しょうゆ",
+  "酒",
+  "みりん",
+  "砂糖",
+  "塩",
+  "こしょう",
+  "酢",
+  "みそ",
+  "かたくり粉",
+  "ごま油",
+  "オリーブ油",
+  "中濃ソース",
+  "トマトケチャップ",
+  "カレー粉",
+  "はちみつ",
+  "ポン酢しょうゆ",
+];
+
 const categories = ["肉", "魚", "野菜", "卵・豆腐"];
 const shoppingCategoryOrder = ["肉", "魚", "野菜", "卵・豆腐", "その他"];
 const seasoningCategory = "調味料";
 
-let recipes = loadJson("recipes", defaultRecipes);
+let recipes = [];
 let selectedCategory = "";
 let selectedIngredient = "";
 let selectedRecipeId = "";
+let shoppingItems = loadJson("shoppingItems", []);
 
 const recipeCount = document.querySelector("#recipeCount");
 const ingredientSearch = document.querySelector("#ingredientSearch");
@@ -163,6 +79,8 @@ document.querySelector("#clearFilters").addEventListener("click", () => {
 
 document.querySelector("#clearShopping").addEventListener("click", () => {
   selectedRecipeId = "";
+  shoppingItems = [];
+  saveJson("shoppingItems", shoppingItems);
   renderRecipes();
   renderShoppingList();
 });
@@ -176,7 +94,6 @@ ingredientSearch.addEventListener("input", () => {
 pantryInput.addEventListener("input", () => {
   saveJson("pantry", getPantryItems());
   renderRecipes();
-  renderShoppingList();
 });
 
 tagFilter.addEventListener("change", renderRecipes);
@@ -194,7 +111,7 @@ recipeForm.addEventListener("submit", (event) => {
     ingredients: [
       ...main.map((name) => ({ name, amount: "", category: guessCategory(name) })),
       ...subs.map((name) => ({ name, amount: "", category: guessCategory(name) })),
-      ...seasonings.map((name) => ({ name, amount: "", category: seasoningCategory })),
+      ...seasonings.map((name) => ({ name, amount: "", category: guessCategory(name) })),
     ],
     tags: splitWords(form.get("tags")),
     time: Number(form.get("time")) || 0,
@@ -212,6 +129,27 @@ recipeForm.addEventListener("submit", (event) => {
   recipeForm.reset();
   render();
 });
+
+async function init() {
+  try {
+    const response = await fetch("recipes.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`recipes.json ${response.status}`);
+    const data = await response.json();
+    const currentVersion = localStorage.getItem("recipeDataVersion");
+    if (currentVersion !== data.version) {
+      saveJson("recipes", data.recipes);
+      localStorage.setItem("recipeDataVersion", data.version);
+      shoppingItems = [];
+      saveJson("shoppingItems", shoppingItems);
+    }
+    recipes = loadJson("recipes", data.recipes);
+  } catch (error) {
+    recipeList.innerHTML = '<div class="empty-state">レシピJSONを読み込めませんでした。</div>';
+    console.error(error);
+    return;
+  }
+  render();
+}
 
 function render() {
   recipeCount.textContent = recipes.length;
@@ -318,10 +256,11 @@ function renderRecipes() {
       <div class="ingredient-line">足りない食材: ${escapeHtml(missingNames)}</div>
       ${recipe.memo ? `<div class="ingredient-line">メモ: ${escapeHtml(recipe.memo)}</div>` : ""}
       <div class="tag-row">${recipe.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
-      <button class="primary-button" type="button">このレシピで買い物リスト</button>
+      <button class="primary-button" type="button">買い物リストに追加</button>
     `;
     card.querySelector("button").addEventListener("click", () => {
       selectedRecipeId = recipe.id;
+      addRecipeToShoppingList(recipe);
       renderRecipes();
       renderShoppingList();
     });
@@ -329,19 +268,34 @@ function renderRecipes() {
   });
 }
 
-function renderShoppingList() {
-  const recipe = recipes.find((item) => item.id === selectedRecipeId);
-  shoppingList.innerHTML = "";
-  shoppingEmpty.style.display = recipe ? "none" : "block";
-  if (!recipe) return;
-
+function addRecipeToShoppingList(recipe) {
   const items = getMissingIngredients(recipe, getPantryItems());
-  if (!items.length) {
-    shoppingList.innerHTML = '<div class="empty-state">追加で買うものはありません。</div>';
-    return;
-  }
+  items.forEach((item) => {
+    const key = `${normalize(item.category)}:${normalize(item.name)}`;
+    const existing = shoppingItems.find((shoppingItem) => shoppingItem.key === key);
+    if (existing) {
+      existing.amounts.push(item.amount || "必要量");
+      existing.recipes.push(recipe.name);
+      return;
+    }
+    shoppingItems.push({
+      key,
+      name: item.name,
+      category: item.category || "その他",
+      amounts: [item.amount || "必要量"],
+      recipes: [recipe.name],
+      checked: false,
+    });
+  });
+  saveJson("shoppingItems", shoppingItems);
+}
 
-  const grouped = items.reduce((result, item) => {
+function renderShoppingList() {
+  shoppingList.innerHTML = "";
+  shoppingEmpty.style.display = shoppingItems.length ? "none" : "block";
+  if (!shoppingItems.length) return;
+
+  const grouped = shoppingItems.reduce((result, item) => {
     const category = item.category || "その他";
     result[category] = result[category] || [];
     result[category].push(item);
@@ -354,14 +308,16 @@ function renderShoppingList() {
     group.innerHTML = `<h3>${escapeHtml(category)}</h3>`;
     grouped[category].forEach((item) => {
       const row = document.createElement("label");
-      row.className = "shopping-item";
+      row.className = `shopping-item${item.checked ? " checked" : ""}`;
       row.innerHTML = `
-        <input type="checkbox" />
+        <input type="checkbox" ${item.checked ? "checked" : ""} />
         <span>${escapeHtml(item.name)}</span>
-        <span class="amount">${escapeHtml(item.amount || "必要量")}</span>
+        <span class="amount">${escapeHtml(formatAmounts(item.amounts))}</span>
       `;
       row.querySelector("input").addEventListener("change", (event) => {
-        row.classList.toggle("checked", event.target.checked);
+        item.checked = event.target.checked;
+        row.classList.toggle("checked", item.checked);
+        saveJson("shoppingItems", shoppingItems);
       });
       group.appendChild(row);
     });
@@ -384,8 +340,10 @@ function getAllIngredients() {
 
 function recipeMatchesIngredient(recipe, query) {
   const normalizedQuery = normalize(query);
-  return recipe.ingredients.some((item) => normalize(item.name).includes(normalizedQuery)) ||
-    recipe.mainIngredients.some((item) => normalize(item).includes(normalizedQuery));
+  return (
+    recipe.ingredients.some((item) => normalize(item.name).includes(normalizedQuery)) ||
+    recipe.mainIngredients.some((item) => normalize(item).includes(normalizedQuery))
+  );
 }
 
 function getMissingIngredients(recipe, pantry) {
@@ -408,7 +366,13 @@ function splitWords(value) {
 }
 
 function guessCategory(name) {
-  const found = getAllIngredients().find((item) => normalize(item.name) === normalize(name));
+  const normalizedName = normalize(name);
+  if (["しょうが", "生姜", "ショウガ", "にんにく", "ニンニク", "大蒜"].some((item) => normalize(item) === normalizedName)) {
+    return "野菜";
+  }
+  const found = getAllIngredients().find((item) => {
+    return normalize(item.name) === normalizedName || item.aliases.some((alias) => normalize(alias) === normalizedName);
+  });
   return found?.category || "その他";
 }
 
@@ -418,6 +382,10 @@ function sortCategories(categoryNames) {
     const bIndex = shoppingCategoryOrder.includes(b) ? shoppingCategoryOrder.indexOf(b) : 99;
     return aIndex - bIndex || a.localeCompare(b, "ja");
   });
+}
+
+function formatAmounts(amounts) {
+  return amounts.filter(Boolean).join(" + ");
 }
 
 function normalize(value) {
@@ -445,4 +413,4 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-render();
+init();
