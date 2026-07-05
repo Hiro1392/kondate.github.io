@@ -1,5 +1,5 @@
 {
-  "version": "recipe-book-photos-2026-07-05-fish-v3",
+  "version": "recipe-book-photos-2026-07-05-more-meat-v5",
   "recipes": [
     {
       "id": "recipe_001",
@@ -1219,6 +1219,824 @@
       "book": "冷凍保存レシピ本",
       "page": 128,
       "memo": "半解凍でレンジ蒸し。にんにくとバターがアクセント。"
+    },
+    {
+      "id": "recipe_021",
+      "name": "豚のみそ漬け",
+      "mainIngredients": [
+        "豚ロース肉"
+      ],
+      "ingredients": [
+        {
+          "name": "豚ロース肉(とんカツ用)",
+          "amount": "2枚",
+          "category": "肉"
+        },
+        {
+          "name": "みそ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "水菜",
+          "amount": "適量",
+          "category": "野菜"
+        }
+      ],
+      "tags": [
+        "肉",
+        "和食",
+        "冷凍",
+        "焼き物",
+        "みそ"
+      ],
+      "time": 7,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 16,
+      "memo": "解凍して調理。みそに漬け込んで豚肉をしっとり仕上げる。"
+    },
+    {
+      "id": "recipe_022",
+      "name": "回鍋肉",
+      "mainIngredients": [
+        "豚バラ薄切り肉"
+      ],
+      "ingredients": [
+        {
+          "name": "豚バラ薄切り肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "キャベツ",
+          "amount": "300g",
+          "category": "野菜"
+        },
+        {
+          "name": "にんにくのみじん切り",
+          "amount": "1かけ分",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "みそ",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "豆板醤",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "中華",
+        "炒め物",
+        "冷凍"
+      ],
+      "time": 9,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 18,
+      "memo": "半解凍で調理。辛くない中華おかずとして食べやすい回鍋肉。"
+    },
+    {
+      "id": "recipe_023",
+      "name": "豚丼",
+      "mainIngredients": [
+        "豚こまぎれ肉"
+      ],
+      "ingredients": [
+        {
+          "name": "豚こまぎれ肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1/4個",
+          "category": "野菜"
+        },
+        {
+          "name": "にら",
+          "amount": "1/3束(30g)",
+          "category": "野菜"
+        },
+        {
+          "name": "にんじん",
+          "amount": "1/5本(30g)",
+          "category": "野菜"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "みりん",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "ごはん",
+          "amount": "適量",
+          "category": "その他"
+        }
+      ],
+      "tags": [
+        "肉",
+        "和食",
+        "丼",
+        "冷凍"
+      ],
+      "time": 12,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 26,
+      "memo": "半解凍で調理。にらの風味がきいた夕食向きの豚丼。"
+    },
+    {
+      "id": "recipe_024",
+      "name": "豚肉とキャベツの塩こぶ蒸し",
+      "mainIngredients": [
+        "豚こまぎれ肉"
+      ],
+      "ingredients": [
+        {
+          "name": "豚こまぎれ肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "キャベツ",
+          "amount": "150g",
+          "category": "野菜"
+        },
+        {
+          "name": "まいたけ",
+          "amount": "1パック",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "ごま油",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "塩こぶ",
+          "amount": "10g",
+          "category": "その他"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/4",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "和食",
+        "レンジ",
+        "蒸し料理",
+        "冷凍"
+      ],
+      "time": 10,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 32,
+      "memo": "半解凍でレンジ調理。塩こぶのうまみで仕上げる蒸し料理。"
+    },
+    {
+      "id": "recipe_025",
+      "name": "親子丼",
+      "mainIngredients": [
+        "鶏もも肉"
+      ],
+      "ingredients": [
+        {
+          "name": "鶏もも肉",
+          "amount": "1枚(250g)",
+          "category": "肉"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1個",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ4",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "みりん",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "卵",
+          "amount": "2個",
+          "category": "卵・豆腐"
+        },
+        {
+          "name": "ごはん",
+          "amount": "適量",
+          "category": "その他"
+        },
+        {
+          "name": "三つ葉",
+          "amount": "適量",
+          "category": "野菜"
+        }
+      ],
+      "tags": [
+        "肉",
+        "和食",
+        "丼",
+        "卵",
+        "冷凍"
+      ],
+      "time": 12,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 50,
+      "memo": "半解凍で調理。仕上げに卵でとじる甘めの親子丼。"
+    },
+    {
+      "id": "recipe_026",
+      "name": "ささ身と長いもの梅春巻き",
+      "mainIngredients": [
+        "鶏ささ身"
+      ],
+      "ingredients": [
+        {
+          "name": "鶏ささ身",
+          "amount": "3本(150g)",
+          "category": "肉"
+        },
+        {
+          "name": "長いも",
+          "amount": "80g",
+          "category": "野菜"
+        },
+        {
+          "name": "梅干し",
+          "amount": "2個",
+          "category": "その他"
+        },
+        {
+          "name": "青じそ",
+          "amount": "6枚",
+          "category": "野菜"
+        },
+        {
+          "name": "春巻きの皮",
+          "amount": "6枚",
+          "category": "その他"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/8",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "小麦粉",
+          "amount": "小さじ1",
+          "category": "その他"
+        },
+        {
+          "name": "水",
+          "amount": "小さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "揚げ油",
+          "amount": "適量",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "揚げ物",
+        "冷凍",
+        "梅",
+        "弁当"
+      ],
+      "time": 10,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 52,
+      "memo": "冷凍のまま調理。梅の酸味がきいた春巻き。"
+    },
+    {
+      "id": "recipe_027",
+      "name": "鶏肉のねぎ塩焼き",
+      "mainIngredients": [
+        "鶏もも肉"
+      ],
+      "ingredients": [
+        {
+          "name": "鶏もも肉",
+          "amount": "1枚(250g)",
+          "category": "肉"
+        },
+        {
+          "name": "ねぎ",
+          "amount": "1本",
+          "category": "野菜"
+        },
+        {
+          "name": "にんにくのみじん切り",
+          "amount": "1かけ分",
+          "category": "野菜"
+        },
+        {
+          "name": "ごま油",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "焼き物",
+        "冷凍",
+        "ねぎ塩"
+      ],
+      "time": 17,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 58,
+      "memo": "半解凍で調理。にんにくとごま油の風味がきいたねぎ塩焼き。"
+    },
+    {
+      "id": "recipe_028",
+      "name": "鶏肉と小松菜のクリーム煮",
+      "mainIngredients": [
+        "鶏胸肉"
+      ],
+      "ingredients": [
+        {
+          "name": "鶏胸肉",
+          "amount": "1枚(250g)",
+          "category": "肉"
+        },
+        {
+          "name": "小松菜",
+          "amount": "1/2束(100g)",
+          "category": "野菜"
+        },
+        {
+          "name": "マッシュルーム",
+          "amount": "1パック(6個)",
+          "category": "野菜"
+        },
+        {
+          "name": "ホワイトソース缶",
+          "amount": "2/3カップ",
+          "category": "その他"
+        },
+        {
+          "name": "牛乳",
+          "amount": "大さじ3",
+          "category": "その他"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/4",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "洋食",
+        "煮物",
+        "冷凍",
+        "クリーム"
+      ],
+      "time": 15,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 66,
+      "memo": "半解凍で調理。ホワイトソースで小松菜の苦みをまろやかにするクリーム煮。"
+    },
+    {
+      "id": "recipe_029",
+      "name": "ピーマンの肉詰め",
+      "mainIngredients": [
+        "豚ひき肉",
+        "ピーマン"
+      ],
+      "ingredients": [
+        {
+          "name": "豚ひき肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "ピーマン",
+          "amount": "4個",
+          "category": "野菜"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1/4個",
+          "category": "野菜"
+        },
+        {
+          "name": "かたくり粉",
+          "amount": "適量",
+          "category": "調味料"
+        },
+        {
+          "name": "とき卵",
+          "amount": "1/2個分",
+          "category": "卵・豆腐"
+        },
+        {
+          "name": "トマトケチャップ",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "かたくり粉",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "洋食",
+        "冷凍",
+        "蒸し焼き",
+        "弁当"
+      ],
+      "time": 12,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 102,
+      "memo": "半解凍で調理。ピーマンと肉の密着度が上がり、見た目よく仕上がる。"
+    },
+    {
+      "id": "recipe_030",
+      "name": "塩プルコギ",
+      "mainIngredients": [
+        "牛切り落とし肉"
+      ],
+      "ingredients": [
+        {
+          "name": "牛切り落とし肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1/2個",
+          "category": "野菜"
+        },
+        {
+          "name": "にんじん",
+          "amount": "1/5本(30g)",
+          "category": "野菜"
+        },
+        {
+          "name": "ピーマン",
+          "amount": "2個",
+          "category": "野菜"
+        },
+        {
+          "name": "いり白ごま",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "にんにくのすりおろし",
+          "amount": "1かけ分",
+          "category": "野菜"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/2強",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "韓国風",
+        "炒め物",
+        "冷凍"
+      ],
+      "time": 8,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 94,
+      "memo": "半解凍で調理。にんにくで食欲を促す彩りのよい塩味プルコギ。"
+    },
+    {
+      "id": "recipe_031",
+      "name": "青椒肉絲",
+      "mainIngredients": [
+        "牛切り落とし肉"
+      ],
+      "ingredients": [
+        {
+          "name": "牛切り落とし肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "ピーマン",
+          "amount": "3個",
+          "category": "野菜"
+        },
+        {
+          "name": "黄パプリカ",
+          "amount": "1/2個",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "オイスターソース",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "ごま油",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "小さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "かたくり粉",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "中華",
+        "炒め物",
+        "冷凍"
+      ],
+      "time": 8,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 88,
+      "memo": "半解凍で調理。パプリカで彩りよく、あっさり食べられる青椒肉絲。"
+    },
+    {
+      "id": "recipe_032",
+      "name": "鶏肉とかぼちゃのピリ辛みそ煮",
+      "mainIngredients": [
+        "鶏もも肉"
+      ],
+      "ingredients": [
+        {
+          "name": "鶏もも肉",
+          "amount": "1枚(250g)",
+          "category": "肉"
+        },
+        {
+          "name": "かぼちゃ",
+          "amount": "200g",
+          "category": "野菜"
+        },
+        {
+          "name": "ねぎ",
+          "amount": "1本",
+          "category": "野菜"
+        },
+        {
+          "name": "みそ",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "みりん",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "小さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "豆板醤",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "すり白ごま",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "和食",
+        "煮物",
+        "冷凍",
+        "ピリ辛"
+      ],
+      "time": 13,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 82,
+      "memo": "半解凍でレンジ調理。ピリ辛のかぼちゃがごはんによく合う。"
+    },
+    {
+      "id": "recipe_033",
+      "name": "鶏肉と大根のオイスターいため",
+      "mainIngredients": [
+        "鶏胸肉"
+      ],
+      "ingredients": [
+        {
+          "name": "鶏胸肉",
+          "amount": "1枚(250g)",
+          "category": "肉"
+        },
+        {
+          "name": "大根",
+          "amount": "200g",
+          "category": "野菜"
+        },
+        {
+          "name": "豆苗",
+          "amount": "1パック",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "オイスターソース",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "ごま油",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "中華",
+        "炒め物",
+        "冷凍"
+      ],
+      "time": 12,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 72,
+      "memo": "半解凍で調理。鶏肉のうまみとオイスターソースのコクで大根をおいしく食べる。"
     }
   ]
 }
