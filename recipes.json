@@ -1,20 +1,57 @@
 {
-  "version": "recipe-book-photos-2026-07-04-v2",
+  "version": "recipe-book-photos-2026-07-05-fish-v3",
   "recipes": [
     {
       "id": "recipe_001",
       "name": "豚肉とかぼちゃのカレーいため",
-      "mainIngredients": ["豚こまぎれ肉", "かぼちゃ"],
-      "ingredients": [
-        { "name": "豚こまぎれ肉", "amount": "200g", "category": "肉" },
-        { "name": "かぼちゃ", "amount": "200g", "category": "野菜" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "中濃ソース", "amount": "大さじ1", "category": "調味料" },
-        { "name": "しょうゆ", "amount": "大さじ1/2", "category": "調味料" },
-        { "name": "砂糖", "amount": "小さじ1", "category": "調味料" },
-        { "name": "カレー粉", "amount": "小さじ1/2", "category": "調味料" }
+      "mainIngredients": [
+        "豚こまぎれ肉",
+        "かぼちゃ"
       ],
-      "tags": ["肉", "野菜", "カレー", "炒め物", "冷凍"],
+      "ingredients": [
+        {
+          "name": "豚こまぎれ肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "かぼちゃ",
+          "amount": "200g",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "中濃ソース",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "小さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "カレー粉",
+          "amount": "小さじ1/2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "野菜",
+        "カレー",
+        "炒め物",
+        "冷凍"
+      ],
       "time": 15,
       "servings": "2人分",
       "book": "画像10",
@@ -24,15 +61,43 @@
     {
       "id": "recipe_002",
       "name": "豚キムチ",
-      "mainIngredients": ["豚バラ薄切り肉", "白菜キムチ"],
-      "ingredients": [
-        { "name": "豚バラ薄切り肉", "amount": "200g", "category": "肉" },
-        { "name": "小松菜", "amount": "1束(200g)", "category": "野菜" },
-        { "name": "白菜キムチ", "amount": "100g", "category": "野菜" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "しょうゆ", "amount": "小さじ1", "category": "調味料" }
+      "mainIngredients": [
+        "豚バラ薄切り肉",
+        "白菜キムチ"
       ],
-      "tags": ["肉", "キムチ", "炒め物", "冷凍"],
+      "ingredients": [
+        {
+          "name": "豚バラ薄切り肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "小松菜",
+          "amount": "1束(200g)",
+          "category": "野菜"
+        },
+        {
+          "name": "白菜キムチ",
+          "amount": "100g",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "小さじ1",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "キムチ",
+        "炒め物",
+        "冷凍"
+      ],
       "time": 10,
       "servings": "2人分",
       "book": "画像7",
@@ -42,18 +107,59 @@
     {
       "id": "recipe_003",
       "name": "豚肉ときのこのバターポン酢いため",
-      "mainIngredients": ["豚こまぎれ肉", "しめじ"],
-      "ingredients": [
-        { "name": "豚こまぎれ肉", "amount": "200g", "category": "肉" },
-        { "name": "えのきだけ", "amount": "1袋", "category": "野菜" },
-        { "name": "しいたけ", "amount": "3個", "category": "野菜" },
-        { "name": "しめじ", "amount": "1袋", "category": "野菜" },
-        { "name": "バター", "amount": "10g", "category": "その他" },
-        { "name": "ポン酢しょうゆ", "amount": "大さじ2", "category": "調味料" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "みりん", "amount": "大さじ1/2", "category": "調味料" }
+      "mainIngredients": [
+        "豚こまぎれ肉",
+        "しめじ"
       ],
-      "tags": ["肉", "きのこ", "ポン酢", "炒め物", "冷凍"],
+      "ingredients": [
+        {
+          "name": "豚こまぎれ肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "えのきだけ",
+          "amount": "1袋",
+          "category": "野菜"
+        },
+        {
+          "name": "しいたけ",
+          "amount": "3個",
+          "category": "野菜"
+        },
+        {
+          "name": "しめじ",
+          "amount": "1袋",
+          "category": "野菜"
+        },
+        {
+          "name": "バター",
+          "amount": "10g",
+          "category": "その他"
+        },
+        {
+          "name": "ポン酢しょうゆ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "みりん",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "きのこ",
+        "ポン酢",
+        "炒め物",
+        "冷凍"
+      ],
       "time": 12,
       "servings": "2人分",
       "book": "画像5",
@@ -63,19 +169,62 @@
     {
       "id": "recipe_004",
       "name": "ポークチャップ",
-      "mainIngredients": ["豚こまぎれ肉"],
-      "ingredients": [
-        { "name": "豚こまぎれ肉", "amount": "200g", "category": "肉" },
-        { "name": "玉ねぎ", "amount": "1/2個", "category": "野菜" },
-        { "name": "しめじ", "amount": "1袋", "category": "野菜" },
-        { "name": "トマトケチャップ", "amount": "大さじ2", "category": "調味料" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "中濃ソース", "amount": "大さじ1", "category": "調味料" },
-        { "name": "塩", "amount": "少々", "category": "調味料" },
-        { "name": "こしょう", "amount": "少々", "category": "調味料" },
-        { "name": "パセリ", "amount": "適量", "category": "野菜" }
+      "mainIngredients": [
+        "豚こまぎれ肉"
       ],
-      "tags": ["肉", "ケチャップ", "炒め物", "冷凍"],
+      "ingredients": [
+        {
+          "name": "豚こまぎれ肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1/2個",
+          "category": "野菜"
+        },
+        {
+          "name": "しめじ",
+          "amount": "1袋",
+          "category": "野菜"
+        },
+        {
+          "name": "トマトケチャップ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "中濃ソース",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "パセリ",
+          "amount": "適量",
+          "category": "野菜"
+        }
+      ],
+      "tags": [
+        "肉",
+        "ケチャップ",
+        "炒め物",
+        "冷凍"
+      ],
       "time": 15,
       "servings": "2人分",
       "book": "画像6",
@@ -85,21 +234,74 @@
     {
       "id": "recipe_005",
       "name": "鶏肉とピーマンの甘酢いため",
-      "mainIngredients": ["鶏もも肉", "ピーマン"],
-      "ingredients": [
-        { "name": "鶏もも肉", "amount": "1枚(250g)", "category": "肉" },
-        { "name": "塩", "amount": "少々", "category": "調味料" },
-        { "name": "こしょう", "amount": "少々", "category": "調味料" },
-        { "name": "ピーマン", "amount": "4個", "category": "野菜" },
-        { "name": "玉ねぎ", "amount": "1/2個", "category": "野菜" },
-        { "name": "トマトケチャップ", "amount": "大さじ2", "category": "調味料" },
-        { "name": "酢", "amount": "大さじ1と1/2", "category": "調味料" },
-        { "name": "砂糖", "amount": "大さじ1と1/2", "category": "調味料" },
-        { "name": "しょうゆ", "amount": "小さじ2", "category": "調味料" },
-        { "name": "かたくり粉", "amount": "小さじ1", "category": "調味料" },
-        { "name": "水", "amount": "小さじ2", "category": "調味料" }
+      "mainIngredients": [
+        "鶏もも肉",
+        "ピーマン"
       ],
-      "tags": ["肉", "甘酢", "ピーマン", "炒め物", "冷凍"],
+      "ingredients": [
+        {
+          "name": "鶏もも肉",
+          "amount": "1枚(250g)",
+          "category": "肉"
+        },
+        {
+          "name": "塩",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "ピーマン",
+          "amount": "4個",
+          "category": "野菜"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1/2個",
+          "category": "野菜"
+        },
+        {
+          "name": "トマトケチャップ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "酢",
+          "amount": "大さじ1と1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "大さじ1と1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "かたくり粉",
+          "amount": "小さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "水",
+          "amount": "小さじ2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "肉",
+        "甘酢",
+        "ピーマン",
+        "炒め物",
+        "冷凍"
+      ],
       "time": 20,
       "servings": "2人分",
       "book": "画像2",
@@ -109,15 +311,42 @@
     {
       "id": "recipe_006",
       "name": "鶏肉のはちみつ照り焼き",
-      "mainIngredients": ["鶏もも肉"],
-      "ingredients": [
-        { "name": "鶏もも肉", "amount": "小2枚(400g)", "category": "肉" },
-        { "name": "しょうゆ", "amount": "大さじ2", "category": "調味料" },
-        { "name": "はちみつ", "amount": "大さじ2", "category": "調味料" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "ベビーリーフ", "amount": "適量", "category": "野菜" }
+      "mainIngredients": [
+        "鶏もも肉"
       ],
-      "tags": ["肉", "照り焼き", "はちみつ", "冷凍"],
+      "ingredients": [
+        {
+          "name": "鶏もも肉",
+          "amount": "小2枚(400g)",
+          "category": "肉"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "はちみつ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "ベビーリーフ",
+          "amount": "適量",
+          "category": "野菜"
+        }
+      ],
+      "tags": [
+        "肉",
+        "照り焼き",
+        "はちみつ",
+        "冷凍"
+      ],
       "time": 15,
       "servings": "2人分",
       "book": "画像9",
@@ -127,18 +356,59 @@
     {
       "id": "recipe_007",
       "name": "えのきみそつくね",
-      "mainIngredients": ["鶏ひき肉", "えのきだけ"],
-      "ingredients": [
-        { "name": "鶏ひき肉", "amount": "200g", "category": "肉" },
-        { "name": "えのきだけ", "amount": "1袋", "category": "野菜" },
-        { "name": "万能ねぎ", "amount": "3本", "category": "野菜" },
-        { "name": "みそ", "amount": "大さじ1", "category": "調味料" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "かたくり粉", "amount": "大さじ1", "category": "調味料" },
-        { "name": "しょうが", "amount": "小さじ1", "category": "野菜" },
-        { "name": "青じそ", "amount": "適量", "category": "野菜" }
+      "mainIngredients": [
+        "鶏ひき肉",
+        "えのきだけ"
       ],
-      "tags": ["肉", "つくね", "みそ", "和食", "冷凍"],
+      "ingredients": [
+        {
+          "name": "鶏ひき肉",
+          "amount": "200g",
+          "category": "肉"
+        },
+        {
+          "name": "えのきだけ",
+          "amount": "1袋",
+          "category": "野菜"
+        },
+        {
+          "name": "万能ねぎ",
+          "amount": "3本",
+          "category": "野菜"
+        },
+        {
+          "name": "みそ",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "かたくり粉",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうが",
+          "amount": "小さじ1",
+          "category": "野菜"
+        },
+        {
+          "name": "青じそ",
+          "amount": "適量",
+          "category": "野菜"
+        }
+      ],
+      "tags": [
+        "肉",
+        "つくね",
+        "みそ",
+        "和食",
+        "冷凍"
+      ],
       "time": 20,
       "servings": "2人分",
       "book": "画像1",
@@ -148,20 +418,70 @@
     {
       "id": "recipe_008",
       "name": "鮭と小松菜の中華蒸し",
-      "mainIngredients": ["鮭", "小松菜"],
-      "ingredients": [
-        { "name": "鮭", "amount": "2切れ", "category": "魚" },
-        { "name": "小松菜", "amount": "1束(200g)", "category": "野菜" },
-        { "name": "にんじん", "amount": "1/5本(30g)", "category": "野菜" },
-        { "name": "しょうが", "amount": "1かけ分", "category": "野菜" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "酢", "amount": "大さじ1", "category": "調味料" },
-        { "name": "しょうゆ", "amount": "大さじ1と1/2", "category": "調味料" },
-        { "name": "ごま油", "amount": "大さじ1/2", "category": "調味料" },
-        { "name": "塩", "amount": "少々", "category": "調味料" },
-        { "name": "こしょう", "amount": "少々", "category": "調味料" }
+      "mainIngredients": [
+        "鮭",
+        "小松菜"
       ],
-      "tags": ["魚", "鮭", "小松菜", "中華", "蒸し物", "冷凍"],
+      "ingredients": [
+        {
+          "name": "鮭",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "小松菜",
+          "amount": "1束(200g)",
+          "category": "野菜"
+        },
+        {
+          "name": "にんじん",
+          "amount": "1/5本(30g)",
+          "category": "野菜"
+        },
+        {
+          "name": "しょうが",
+          "amount": "1かけ分",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "酢",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ1と1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "ごま油",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "鮭",
+        "小松菜",
+        "中華",
+        "蒸し物",
+        "冷凍"
+      ],
       "time": 20,
       "servings": "2人分",
       "book": "画像8",
@@ -171,20 +491,68 @@
     {
       "id": "recipe_009",
       "name": "めかじきの甘酢あんかけ",
-      "mainIngredients": ["めかじき"],
-      "ingredients": [
-        { "name": "めかじき", "amount": "2切れ", "category": "魚" },
-        { "name": "にんじん", "amount": "1/5本(30g)", "category": "野菜" },
-        { "name": "ピーマン", "amount": "2個", "category": "野菜" },
-        { "name": "玉ねぎ", "amount": "1/4個", "category": "野菜" },
-        { "name": "酒", "amount": "大さじ2", "category": "調味料" },
-        { "name": "しょうゆ", "amount": "大さじ1と1/2", "category": "調味料" },
-        { "name": "酢", "amount": "大さじ1と1/2", "category": "調味料" },
-        { "name": "砂糖", "amount": "大さじ1と1/2", "category": "調味料" },
-        { "name": "かたくり粉", "amount": "大さじ1/2", "category": "調味料" },
-        { "name": "水", "amount": "大さじ1", "category": "調味料" }
+      "mainIngredients": [
+        "めかじき"
       ],
-      "tags": ["魚", "めかじき", "甘酢", "あんかけ", "冷凍"],
+      "ingredients": [
+        {
+          "name": "めかじき",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "にんじん",
+          "amount": "1/5本(30g)",
+          "category": "野菜"
+        },
+        {
+          "name": "ピーマン",
+          "amount": "2個",
+          "category": "野菜"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1/4個",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ1と1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "酢",
+          "amount": "大さじ1と1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "大さじ1と1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "かたくり粉",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "水",
+          "amount": "大さじ1",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "めかじき",
+        "甘酢",
+        "あんかけ",
+        "冷凍"
+      ],
       "time": 18,
       "servings": "2人分",
       "book": "画像3",
@@ -194,25 +562,663 @@
     {
       "id": "recipe_010",
       "name": "さわらの香味レモン蒸し",
-      "mainIngredients": ["さわら"],
-      "ingredients": [
-        { "name": "さわら", "amount": "2切れ", "category": "魚" },
-        { "name": "セロリ", "amount": "50g", "category": "野菜" },
-        { "name": "にんじん", "amount": "1/4本(40g)", "category": "野菜" },
-        { "name": "レモンの薄切り", "amount": "2切れ", "category": "野菜" },
-        { "name": "酒", "amount": "大さじ1", "category": "調味料" },
-        { "name": "オリーブ油", "amount": "大さじ1", "category": "調味料" },
-        { "name": "レモン汁", "amount": "大さじ1/2", "category": "調味料" },
-        { "name": "塩", "amount": "小さじ1/3", "category": "調味料" },
-        { "name": "こしょう", "amount": "少々", "category": "調味料" },
-        { "name": "パセリ", "amount": "適量", "category": "野菜" }
+      "mainIngredients": [
+        "さわら"
       ],
-      "tags": ["魚", "さわら", "レモン", "蒸し物", "冷凍"],
+      "ingredients": [
+        {
+          "name": "さわら",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "セロリ",
+          "amount": "50g",
+          "category": "野菜"
+        },
+        {
+          "name": "にんじん",
+          "amount": "1/4本(40g)",
+          "category": "野菜"
+        },
+        {
+          "name": "レモンの薄切り",
+          "amount": "2切れ",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "オリーブ油",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "レモン汁",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/3",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "パセリ",
+          "amount": "適量",
+          "category": "野菜"
+        }
+      ],
+      "tags": [
+        "魚",
+        "さわら",
+        "レモン",
+        "蒸し物",
+        "冷凍"
+      ],
       "time": 15,
       "servings": "2人分",
       "book": "画像4",
       "page": 190,
       "memo": "セロリとレモンの香味。さわらもふっくら。"
+    },
+    {
+      "id": "recipe_011",
+      "name": "たらとじゃがいも、ねぎのさっぱり煮",
+      "mainIngredients": [
+        "たら"
+      ],
+      "ingredients": [
+        {
+          "name": "たら",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "じゃがいも",
+          "amount": "2個(200g)",
+          "category": "野菜"
+        },
+        {
+          "name": "ねぎ",
+          "amount": "1/2本",
+          "category": "野菜"
+        },
+        {
+          "name": "にんにくのみじん切り",
+          "amount": "1かけ分",
+          "category": "野菜"
+        },
+        {
+          "name": "しょうがのみじん切り",
+          "amount": "1かけ分",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "オイスターソース",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "酢",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/4",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "中華",
+        "煮物",
+        "冷凍",
+        "さっぱり"
+      ],
+      "time": 15,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 157,
+      "memo": "半解凍で調理。じゃがいもと香味野菜を合わせた中華風のさっぱり煮。"
+    },
+    {
+      "id": "recipe_012",
+      "name": "たらとかぶのめんつゆ煮",
+      "mainIngredients": [
+        "たら"
+      ],
+      "ingredients": [
+        {
+          "name": "たら",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "かぶ",
+          "amount": "2個(120g)",
+          "category": "野菜"
+        },
+        {
+          "name": "かぶの葉",
+          "amount": "2個分(100g)",
+          "category": "野菜"
+        },
+        {
+          "name": "しょうがの薄切り",
+          "amount": "3切れ",
+          "category": "野菜"
+        },
+        {
+          "name": "めんつゆ(2倍濃縮)",
+          "amount": "大さじ3",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "和食",
+        "煮物",
+        "冷凍",
+        "レンジ"
+      ],
+      "time": 15,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 156,
+      "memo": "半解凍で調理。かぶの葉まで使う、しょうが風味のめんつゆ煮。"
+    },
+    {
+      "id": "recipe_013",
+      "name": "たらのねぎみそレンジ蒸し",
+      "mainIngredients": [
+        "たら"
+      ],
+      "ingredients": [
+        {
+          "name": "たら",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "ねぎ",
+          "amount": "10cm",
+          "category": "野菜"
+        },
+        {
+          "name": "小松菜",
+          "amount": "1/2束(100g)",
+          "category": "野菜"
+        },
+        {
+          "name": "にんじん",
+          "amount": "1/3本(50g)",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "みそ",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "小さじ1",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "和食",
+        "レンジ",
+        "蒸し料理",
+        "冷凍"
+      ],
+      "time": 10,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 154,
+      "memo": "半解凍で調理。野菜をたっぷり合わせるねぎみそ味のレンジ蒸し。"
+    },
+    {
+      "id": "recipe_014",
+      "name": "めかじきのタンドーリ",
+      "mainIngredients": [
+        "めかじき"
+      ],
+      "ingredients": [
+        {
+          "name": "めかじき",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "ヨーグルト(無糖)",
+          "amount": "大さじ3",
+          "category": "その他"
+        },
+        {
+          "name": "トマトケチャップ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "カレー粉",
+          "amount": "小さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/3",
+          "category": "調味料"
+        },
+        {
+          "name": "にんにくのすりおろし",
+          "amount": "小さじ1/2",
+          "category": "野菜"
+        },
+        {
+          "name": "パクチー",
+          "amount": "適量",
+          "category": "野菜"
+        }
+      ],
+      "tags": [
+        "魚",
+        "洋食",
+        "カレー",
+        "グリル",
+        "冷凍"
+      ],
+      "time": 8,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 149,
+      "memo": "解凍して調理。カレー粉とヨーグルトで味つけするタンドーリ風。"
+    },
+    {
+      "id": "recipe_015",
+      "name": "めかじきとパプリカのマヨポンいため",
+      "mainIngredients": [
+        "めかじき"
+      ],
+      "ingredients": [
+        {
+          "name": "めかじき",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "赤パプリカ",
+          "amount": "1/2個",
+          "category": "野菜"
+        },
+        {
+          "name": "黄パプリカ",
+          "amount": "1/2個",
+          "category": "野菜"
+        },
+        {
+          "name": "マヨネーズ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "ポン酢しょうゆ",
+          "amount": "大さじ1 1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "すり白ごま",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "炒め物",
+        "冷凍",
+        "時短",
+        "彩り"
+      ],
+      "time": 10,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 148,
+      "memo": "半解凍で調理。マヨネーズとポン酢しょうゆで仕上げる彩り炒め。"
+    },
+    {
+      "id": "recipe_016",
+      "name": "めかじきのねぎだれレンジ蒸し",
+      "mainIngredients": [
+        "めかじき"
+      ],
+      "ingredients": [
+        {
+          "name": "めかじき",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "ねぎ",
+          "amount": "1本",
+          "category": "野菜"
+        },
+        {
+          "name": "わかめ(乾燥)",
+          "amount": "大さじ1",
+          "category": "その他"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "ごま油",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "酢",
+          "amount": "大さじ1/2",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "レンジ",
+        "蒸し料理",
+        "冷凍",
+        "時短"
+      ],
+      "time": 12,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 146,
+      "memo": "半解凍でレンジ調理。乾燥わかめをそのまま使えるねぎだれ蒸し。"
+    },
+    {
+      "id": "recipe_017",
+      "name": "めかじきと小松菜の甘辛いため",
+      "mainIngredients": [
+        "めかじき"
+      ],
+      "ingredients": [
+        {
+          "name": "めかじき",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "小松菜",
+          "amount": "1束(200g)",
+          "category": "野菜"
+        },
+        {
+          "name": "しょうゆ",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "みりん",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "小さじ1",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "和食",
+        "炒め物",
+        "冷凍",
+        "甘辛"
+      ],
+      "time": 12,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 142,
+      "memo": "半解凍で調理。小松菜と合わせる甘辛味の炒め物。"
+    },
+    {
+      "id": "recipe_018",
+      "name": "めかじきとキャベツのレモンマリネ",
+      "mainIngredients": [
+        "めかじき"
+      ],
+      "ingredients": [
+        {
+          "name": "めかじき",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "キャベツ",
+          "amount": "150g",
+          "category": "野菜"
+        },
+        {
+          "name": "にんにく",
+          "amount": "1かけ",
+          "category": "野菜"
+        },
+        {
+          "name": "レモンの薄切り",
+          "amount": "2切れ",
+          "category": "野菜"
+        },
+        {
+          "name": "レモン汁",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "オリーブ油",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/2強",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "洋食",
+        "レンジ",
+        "マリネ",
+        "冷凍"
+      ],
+      "time": 8,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 140,
+      "memo": "半解凍でレンジ調理。レモンとにんにくを合わせるさっぱりマリネ。"
+    },
+    {
+      "id": "recipe_019",
+      "name": "鮭のピリ辛ポン酢いため",
+      "mainIngredients": [
+        "鮭"
+      ],
+      "ingredients": [
+        {
+          "name": "鮭",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "玉ねぎ",
+          "amount": "1/2個",
+          "category": "野菜"
+        },
+        {
+          "name": "さやいんげん",
+          "amount": "6本",
+          "category": "野菜"
+        },
+        {
+          "name": "赤とうがらし",
+          "amount": "1本",
+          "category": "野菜"
+        },
+        {
+          "name": "ポン酢しょうゆ",
+          "amount": "大さじ2",
+          "category": "調味料"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "砂糖",
+          "amount": "小さじ2",
+          "category": "調味料"
+        }
+      ],
+      "tags": [
+        "魚",
+        "炒め物",
+        "冷凍",
+        "ピリ辛",
+        "ポン酢"
+      ],
+      "time": 12,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 135,
+      "memo": "半解凍で調理。ポン酢しょうゆを使ったすっぱ辛い炒め物。"
+    },
+    {
+      "id": "recipe_020",
+      "name": "鮭のガーリックバター蒸し",
+      "mainIngredients": [
+        "鮭"
+      ],
+      "ingredients": [
+        {
+          "name": "鮭",
+          "amount": "2切れ",
+          "category": "魚"
+        },
+        {
+          "name": "豆苗",
+          "amount": "1袋",
+          "category": "野菜"
+        },
+        {
+          "name": "しめじ",
+          "amount": "1袋",
+          "category": "野菜"
+        },
+        {
+          "name": "にんにくの薄切り",
+          "amount": "1かけ分",
+          "category": "野菜"
+        },
+        {
+          "name": "酒",
+          "amount": "大さじ1",
+          "category": "調味料"
+        },
+        {
+          "name": "塩",
+          "amount": "小さじ1/3",
+          "category": "調味料"
+        },
+        {
+          "name": "こしょう",
+          "amount": "少々",
+          "category": "調味料"
+        },
+        {
+          "name": "バター",
+          "amount": "10g",
+          "category": "その他"
+        }
+      ],
+      "tags": [
+        "魚",
+        "レンジ",
+        "蒸し料理",
+        "冷凍",
+        "バター"
+      ],
+      "time": 9,
+      "servings": "2人分",
+      "book": "冷凍保存レシピ本",
+      "page": 128,
+      "memo": "半解凍でレンジ蒸し。にんにくとバターがアクセント。"
     }
   ]
 }
